@@ -11,10 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
-
-application = DjangoWhiteNoise(application)
-
-application = WhiteNoise(application, root='./blog/static')
+from whitenoise import WhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
