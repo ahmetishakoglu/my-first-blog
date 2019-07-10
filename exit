@@ -1,0 +1,10 @@
+[0;1;31m●[0m postgresql@11-main.service - PostgreSQL Cluster 11-main
+   Loaded: loaded (/lib/systemd/system/postgresql@.service; enabled-runtime; vendor preset: enabled)
+   Active: [0;1;31mfailed[0m (Result: protocol) since Wed 2019-07-10 08:43:36 +03; 21s ago
+  Process: 7304 ExecStart=/usr/bin/pg_ctlcluster --skip-systemctl-redirect 11-main start [0;1;31m(code=exited, status=1/FAILURE)[0m
+
+Jul 10 08:43:36 polebear systemd[1]: Starting PostgreSQL Cluster 11-main...
+Jul 10 08:43:36 polebear postgresql@11-main[7304]: Error: Config owner (polebear:1000) and data owner (postgres:121) do not match, and config owner is not root
+Jul 10 08:43:36 polebear systemd[1]: postgresql@11-main.service: Can't open PID file /run/postgresql/11-main.pid (yet?) after start: No such file or directory
+Jul 10 08:43:36 polebear systemd[1]: [0;1;39m[0;1;31m[0;1;39mpostgresql@11-main.service: Failed with result 'protocol'.[0m
+Jul 10 08:43:36 polebear systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start PostgreSQL Cluster 11-main.[0m
