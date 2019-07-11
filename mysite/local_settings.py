@@ -1,5 +1,8 @@
+
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+import django_heroku
+
+DEBUG = True
 
 DATABASES = {
     'default': {
@@ -8,4 +11,4 @@ DATABASES = {
     }
 }
 
-DEBUG = True
+django_heroku.settings(locals())

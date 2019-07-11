@@ -34,3 +34,4 @@ urllib3==1.25.3
 virtualenv==16.6.1
 virtualenv-clone==0.5.3
 whitenoise==3.1
+django_heroku==0.3
